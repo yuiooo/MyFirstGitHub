@@ -1,0 +1,28 @@
+{
+  "entry": "src/index.js",
+  "theme": {
+    "@primary-color": "#FFBF50",
+    "@font-size-base": "12px"
+  },
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr",
+        "transform-runtime"
+      ]
+    },
+    "production": {
+      "extraBabelPlugins": [
+        "transform-runtime"
+      ]
+    }
+  },
+  "extraBabelPlugins": [
+    "transform-runtime", 
+    ["import", {
+      "libraryName": "antd",
+      "style": true
+    }],
+    "babel-root-import"
+  ]
+}
