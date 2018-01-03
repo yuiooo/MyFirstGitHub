@@ -1,0 +1,19 @@
+@import url(./less/common.less);
+html, body{
+	margin: 0;
+	padding: 0;
+}
+html, body, :global(#root) {
+	height: 100%;
+}
+:global(.content-header){
+	width: 100%;
+	padding: 0px 20px;
+	height: @content-header-height;
+	line-height: @content-header-height;
+	background-color: #fff;
+}
+:global(.content-header-tab){
+	height: @content-header-height;
+	line-height: @content-header-height;
+}
